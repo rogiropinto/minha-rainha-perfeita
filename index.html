@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha mulher linda</title>
+    <link rel="stylesheet" href="namoradagostosa.css">
+    <link rel="stylesheet" href="namoradaperfeita.html">
+</head>
+<body>
+    
+<a href="namoradaperfeita.html">
+    <button>
+
+❤️Meu amor por você é infinito❤️
+
+    </button>
+  </a>
+
+<script>
+  const emojis = ["🤍"];
+  
+  function criarEmoji() {
+    const emoji = document.createElement("div");
+    emoji.classList.add("emoji");
+    emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    
+    emoji.style.left = Math.random() * 100 + "vw";
+    emoji.style.animationDuration = (2 + Math.random() * 3) + "s";
+    
+    document.body.appendChild(emoji);
+
+    setTimeout(() => {
+      emoji.remove();
+    }, 5000);
+  }
+
+  setInterval(criarEmoji, 300);
+</script>
+
+</body>
+</html>
